@@ -32,4 +32,12 @@ async def repeat(ctx, times: int, content='repeating...'):
     for i in range(times):
         await ctx.send(content)
 
+@bot.command()
+async def help(ctx):
+    await ctx.send("""Comamds:
+    -hello
+    -heh (number)
+    -repeat (number) (phrase)
+    """)
+
 bot.run("TOKEN")
